@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="MN0-fM-lsF"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4K-u4-DbB" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWi-Ds-Gcg" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="am8-My-mKH" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sy-6t-Rh5" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7k-6P-Hab" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mt0-EE-Xvt" customClass="LoLTimerButton">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0q-4L-3U1">
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Reset match">
+                                    <color key="titleColor" white="0.20001710766423358" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetHandler:" destination="2" eventType="touchUpInside" id="goJ-3q-YAL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6r-Lm-nmh" customClass="LoLTimerLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-r7-9dv">
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Change time">
+                                    <color key="titleColor" white="0.2000171077" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeHandler:" destination="2" eventType="touchUpInside" id="oEv-KN-hgA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="am8-My-mKH" secondAttribute="bottom" constant="55" id="0T2-NT-0wU"/>
+                            <constraint firstItem="hSy-r7-9dv" firstAttribute="trailing" secondItem="b0q-4L-3U1" secondAttribute="trailing" type="default" id="3BP-Eq-bXQ"/>
+                            <constraint firstAttribute="bottom" secondItem="T7k-6P-Hab" secondAttribute="bottom" constant="473" id="3YA-h2-R6h"/>
+                            <constraint firstAttribute="trailing" secondItem="T7k-6P-Hab" secondAttribute="trailing" constant="671" id="4Vo-ht-byf"/>
+                            <constraint firstItem="b0q-4L-3U1" firstAttribute="centerX" secondItem="MN0-fM-lsF" secondAttribute="centerX" type="default" id="5rA-FL-vlO"/>
+                            <constraint firstItem="MN0-fM-lsF" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="5ra-hY-fH8"/>
+                            <constraint firstItem="k4K-u4-DbB" firstAttribute="bottom" secondItem="GWi-Ds-Gcg" secondAttribute="bottom" type="default" id="938-an-K1w"/>
+                            <constraint firstAttribute="bottom" secondItem="k4K-u4-DbB" secondAttribute="bottom" constant="262" id="CoB-gA-LPu"/>
+                            <constraint firstItem="T7k-6P-Hab" firstAttribute="top" secondItem="5" secondAttribute="top" constant="84" id="GsY-Cn-noA"/>
+                            <constraint firstItem="T7k-6P-Hab" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="70" id="Gt5-bT-wlk"/>
+                            <constraint firstItem="GWi-Ds-Gcg" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="672" id="HvJ-Pq-dWw"/>
+                            <constraint firstItem="GWi-Ds-Gcg" firstAttribute="trailing" secondItem="mt0-EE-Xvt" secondAttribute="trailing" type="default" id="Ic9-7A-oud"/>
+                            <constraint firstItem="1sy-6t-Rh5" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="371" id="JSM-JM-nnH"/>
+                            <constraint firstAttribute="bottom" secondItem="hSy-r7-9dv" secondAttribute="bottom" constant="282" id="RQc-9A-sVA"/>
+                            <constraint firstItem="am8-My-mKH" firstAttribute="leading" secondItem="1sy-6t-Rh5" secondAttribute="leading" type="default" id="T8n-rz-NLn"/>
+                            <constraint firstItem="mt0-EE-Xvt" firstAttribute="bottom" secondItem="am8-My-mKH" secondAttribute="bottom" type="default" id="XBx-G7-Re0"/>
+                            <constraint firstItem="am8-My-mKH" firstAttribute="trailing" secondItem="1sy-6t-Rh5" secondAttribute="trailing" type="default" id="XVU-fL-jbb"/>
+                            <constraint firstItem="GWi-Ds-Gcg" firstAttribute="top" secondItem="k4K-u4-DbB" secondAttribute="top" type="default" id="Xz0-rI-GJ8"/>
+                            <constraint firstItem="T7k-6P-Hab" firstAttribute="trailing" secondItem="k4K-u4-DbB" secondAttribute="trailing" type="default" id="YHJ-e0-ics"/>
+                            <constraint firstItem="MN0-fM-lsF" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="YYS-qw-vRU"/>
+                            <constraint firstItem="b0q-4L-3U1" firstAttribute="top" secondItem="5" secondAttribute="top" constant="315" id="Z3f-tT-Snp"/>
+                            <constraint firstItem="hSy-r7-9dv" firstAttribute="leading" secondItem="b0q-4L-3U1" secondAttribute="leading" type="default" id="ZCV-Lp-GeH"/>
+                            <constraint firstItem="t6r-Lm-nmh" firstAttribute="centerY" secondItem="k4K-u4-DbB" secondAttribute="centerY" type="default" id="ZaC-DG-aaL"/>
+                            <constraint firstItem="T7k-6P-Hab" firstAttribute="leading" secondItem="k4K-u4-DbB" secondAttribute="leading" type="default" id="fyn-5E-YQz"/>
+                            <constraint firstAttribute="trailing" secondItem="GWi-Ds-Gcg" secondAttribute="trailing" constant="69" id="hMR-4c-Uq5"/>
+                            <constraint firstItem="1sy-6t-Rh5" firstAttribute="top" secondItem="T7k-6P-Hab" secondAttribute="top" type="default" id="jrJ-FU-rwH"/>
+                            <constraint firstItem="k4K-u4-DbB" firstAttribute="top" secondItem="5" secondAttribute="top" constant="295" id="myd-yr-Aqu"/>
+                            <constraint firstItem="am8-My-mKH" firstAttribute="top" secondItem="5" secondAttribute="top" constant="502" id="o3c-y0-5GJ"/>
+                            <constraint firstItem="b0q-4L-3U1" firstAttribute="centerX" secondItem="1sy-6t-Rh5" secondAttribute="centerX" type="default" id="opZ-Uw-xN3"/>
+                            <constraint firstItem="mt0-EE-Xvt" firstAttribute="top" secondItem="am8-My-mKH" secondAttribute="top" type="default" id="pSl-Qj-lAm"/>
+                            <constraint firstItem="b0q-4L-3U1" firstAttribute="centerX" secondItem="t6r-Lm-nmh" secondAttribute="centerX" type="default" id="uzk-r8-WzA"/>
+                            <constraint firstItem="GWi-Ds-Gcg" firstAttribute="leading" secondItem="mt0-EE-Xvt" secondAttribute="leading" type="default" id="wVc-RI-PZr"/>
+                            <constraint firstItem="T7k-6P-Hab" firstAttribute="bottom" secondItem="1sy-6t-Rh5" secondAttribute="bottom" type="default" id="zkU-pV-C26"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnBaron" destination="T7k-6P-Hab" id="xGC-rs-uEZ"/>
+                        <outlet property="btnBlue1" destination="k4K-u4-DbB" id="ZTk-8t-3b2"/>
+                        <outlet property="btnBlue2" destination="GWi-Ds-Gcg" id="gb0-ox-Twt"/>
+                        <outlet property="btnDragon" destination="mt0-EE-Xvt" id="50i-4T-95b"/>
+                        <outlet property="btnRed1" destination="am8-My-mKH" id="pOG-jo-IIp"/>
+                        <outlet property="btnRed2" destination="1sy-6t-Rh5" id="HGJ-lH-s48"/>
+                        <outlet property="labelMatchTime" destination="t6r-Lm-nmh" id="pIO-gJ-xW5"/>
+                        <outlet property="timePicker" destination="qht-TP-8NM" id="U56-OK-hT2"/>
+                        <outlet property="timePickerContainer" destination="Jan-gr-ECj" id="SN2-85-Ib8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Jan-gr-ECj">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qht-TP-8NM"/>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A97-uO-BdC">
+                            <items>
+                                <barButtonItem systemItem="cancel" id="KwA-Mg-doa">
+                                    <connections>
+                                        <action selector="timePickingCanceled:" destination="2" id="498-W3-duc"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Wm7-LC-twN"/>
+                                <barButtonItem title="Current Time" id="HIx-He-tDn">
+                                    <connections>
+                                        <action selector="updateTimePicker:" destination="2" id="UqT-VL-jgt"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="kns-oi-VhV"/>
+                                <barButtonItem title="Set time" style="done" id="X3Y-Ij-kKO">
+                                    <connections>
+                                        <action selector="timePickingDone:" destination="2" id="o5q-Kk-fax"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qht-TP-8NM" firstAttribute="bottom" secondItem="Jan-gr-ECj" secondAttribute="bottom" type="default" id="c1G-Od-Uc8"/>
+                        <constraint firstItem="A97-uO-BdC" firstAttribute="trailing" secondItem="Jan-gr-ECj" secondAttribute="trailing" type="default" id="fHZ-Pn-gBW"/>
+                        <constraint firstItem="A97-uO-BdC" firstAttribute="top" secondItem="Jan-gr-ECj" secondAttribute="top" type="default" id="fyg-s6-flB"/>
+                        <constraint firstItem="qht-TP-8NM" firstAttribute="trailing" secondItem="Jan-gr-ECj" secondAttribute="trailing" type="default" id="qwo-9X-Dyt"/>
+                        <constraint firstItem="qht-TP-8NM" firstAttribute="leading" secondItem="Jan-gr-ECj" secondAttribute="leading" type="default" id="vEb-3c-ncQ"/>
+                        <constraint firstItem="A97-uO-BdC" firstAttribute="leading" secondItem="Jan-gr-ECj" secondAttribute="leading" type="default" id="yRe-wa-mN5"/>
+                    </constraints>
+                </view>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background.png" width="1024" height="748"/>
+    </resources>
+    <classes>
+        <class className="LoLTimerButton" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoLTimerButton.h"/>
+        </class>
+        <class className="LoLTimerLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoLTimerLabel.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeHandler:"/>
+                <relationship kind="action" name="resetHandler:"/>
+                <relationship kind="action" name="timePickingCanceled:"/>
+                <relationship kind="action" name="timePickingDone:"/>
+                <relationship kind="action" name="updateTimePicker:"/>
+                <relationship kind="outlet" name="btnBaron" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="btnBlue1" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="btnBlue2" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="btnDragon" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="btnRed1" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="btnRed2" candidateClass="LoLTimerButton"/>
+                <relationship kind="outlet" name="labelMatchTime" candidateClass="LoLTimerLabel"/>
+                <relationship kind="outlet" name="timePicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="timePickerContainer" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
