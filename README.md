@@ -6,3 +6,5 @@ It was just me, an iPad and an evening to play around with XCode. And what bette
 one of your favorite games!
 
 You are free to take any part of the code. Learn and enjoy!
+
+[![LoLJungleTimer](https://raw.githubusercontent.com/firstaidkid/LoL-Jungle-Timer/master/loljungletimer.png)]
