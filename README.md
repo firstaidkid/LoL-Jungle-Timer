@@ -7,6 +7,8 @@ one of your favorite games!
 
 This tool helps you keep track of all the jungle creeps. Just click on the icons to reset the timers or double click to set it to active.
 
+There are buttons to either reset the match or jump several seconds or minutes ahead into the match (in case you forgot to start the app parallel to the match).
+
 Optimized for iOS Version 7 and League of Legends pre 5.0.
 You are free to take any part of the code. Learn and enjoy!
 
