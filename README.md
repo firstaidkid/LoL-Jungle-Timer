@@ -7,4 +7,4 @@ one of your favorite games!
 
 You are free to take any part of the code. Learn and enjoy!
 
-[![LoLJungleTimer](https://raw.githubusercontent.com/firstaidkid/LoL-Jungle-Timer/master/loljungletimer.png)]
+![LoL-Jungle-Timer Screenshot](https://raw.githubusercontent.com/firstaidkid/LoL-Jungle-Timer/master/loljungletimer.png)
